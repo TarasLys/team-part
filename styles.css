@@ -20,7 +20,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* Для позиционирования кнопки закрытия */
 }
 
 .modal-content {
@@ -38,24 +37,18 @@ body {
     background: white;
     border: none;
     font-size: 20px;
-    /* Увеличиваем размер текста */
     color: #007bff;
-    /* Цвет кнопки Save */
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
-    /* Убираем внутренние отступы */
     transition: color 0.3s;
-    /* Плавный переход цвета */
 }
 
 .close-button:hover {
     color: white;
-    /* Цвет текста при наведении */
     background-color: #007bff;
-    /* Цвет фона при наведении */
 }
 
 h2 {
@@ -64,12 +57,9 @@ h2 {
 
 .formulas {
     display: flex;
-    /* Используем flexbox для отображения в одну строку */
     justify-content: flex-start;
     gap: 20px;
-    /* Распределяем пространство между элементами */
     margin-bottom: 10px;
-    /* Отступ внизу для разделения с другими элементами */
 }
 
 .formulas p {
@@ -79,27 +69,22 @@ h2 {
 
 .formulas .label {
     color: black;
-    /* Цвет черный */
     margin-right: 5px;
 }
 
 .formulas .formula {
     color: #007bff;
-    /* Цвет кнопки Save */
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* Устанавливаем ширину для всех элементов формы */
 }
 
 .radio-group {
     display: flex;
-    /* Размещаем радиокнопки в ряд */
     align-items: center;
-    /* Выравниваем по вертикали */
     margin-bottom: 10px;
 }
 
@@ -107,51 +92,41 @@ form {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    /* Отступ между радиокнопками */
 }
 
 input[type="radio"] {
     margin-right: 5px;
-    /* Отступ для радиокнопок */
     accent-color: #007bff;
-    /* Цвет радиокнопки как у кнопки Save */
 }
 
 input[type="number"],
 textarea {
     width: 100%;
-    /* Устанавливаем ширину для всех элементов */
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    /* Включаем паддинги и бордеры в ширину элемента */
     overflow: hidden;
-    /* Убираем скролл */
+    
 }
 
 textarea {
     color: gray;
     font-size: 12px;
     background-color: white;
-    /* Устанавливаем белый фон */
     resize: none;
     padding: 10px;
-    /* Равномерные отступы */
     box-sizing: border-box;
-    /* Учитываем отступы в расчете ширины и высоты */
 }
 
 textarea:read-only {
     background-color: white;
-    /* Устанавливаем белый фон для readonly */
     cursor: not-allowed;
 }
 
 button {
     width: 100px;
-    /* Устанавливаем фиксированную ширину */
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -159,7 +134,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     align-self: flex-end;
-    /* Прижимаем кнопку к правому краю */
+    
 }
 
 button:hover {
@@ -177,93 +152,3 @@ button:hover {
 
 
 
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
-
-.modal {
-    width: 90%;
-    max-width: 600px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    width: 100%;
-    padding: 20px;
-}
-
-h2 {
-    margin-top: 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 10px;
-}
-
-input[type="number"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    
-}
-
-textarea {
-    color: gray;
-    font-size: 12px;
-    background-color: #f0f0f0;
-    height: auto;
-    resize: none;
-    overflow: hidden;
-    padding: 10px;
-    
-}
-
-textarea:read-only {
-    background-color: #f0f0f0;
-    cursor: not-allowed;
-}
-
-button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    box-sizing: border-box;
-    
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-@media (max-width: 600px) {
-    .modal-content {
-        width: 100%;
-        padding: 10px;
-    }
-}  */
