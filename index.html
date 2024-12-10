@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Daily Norma</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2>My daily norma</h2>
+            <div class="formulas">
+                <p><span class="label">For girl:</span> <span class="formula">V=(M*0.03) + (T*0.4)</span></p>
+                <p><span class="label">For man:</span> <span class="formula">V=(M*0.04) + (T*0.6)</span></p>
+            </div>
+            <textarea id="infoText" readonly>* V is the volume of the water norm in liters per day, M is your body weight, T is the time of active sports, or another type of activity commensurate in terms of loads (in the absence of these, you must set 0)</textarea>
+            <form>
+                <h4>Calculate your rate:</h4>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="woman" checked> For woman
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="man"> For man
+                    </label>
+                </div>
+                <div>
+                    <label for="weight">Your weight in kilograms:</label>
+                    <input class="blu" type="number" id="weight" name="weight" value="0">
+                </div>
+                <div>
+                    <label for="activity-time">The time of active participation in sports or other activities with a high physical load in hours:</label>
+                    <input class="blu" type="number" id="activity-time" name="activity-time" value="0">
+                </div>
+                <div>
+                    <p><span>The required amount of water in liters per day:</span>
+                    <span class="blu">1.8 L</span></p>
+                </div>
+                <h4>Write down how much water you will drink:</h4>
+                <div>
+                    <!-- <label for="water-intake">Write down how much water you will drink:</label> -->
+                    <input class="blu" type="number" id="water-intake" name="water-intake" value="0">
+                </div>
+                <button type="submit" class="save-button">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Функция для автоматической настройки высоты textarea
+        function adjustTextareaHeight() {
+            const textarea = document.getElementById('infoText');
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+
+        // Настройка высоты при изменении размера окна
+        window.addEventListener('resize', adjustTextareaHeight);
+
+        // Настройка высоты при загрузке страницы
+        window.onload = adjustTextareaHeight;
+
+        // Функция для закрытия модального окна
+        document.querySelector('.close-button').onclick = function() {
+            document.querySelector('.modal').style.display = 'none';
+        };
+    </script>
+</body>
+</html>
+
+
+
+
+  <!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Daily Norma</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <h2>My daily norma</h2>
+        <p>For girl: V=(M*0.03) + (T*0.4)<br />For man: V=(M*0.04) + (T*0.6)</p>
+        <textarea id="infoText" readonly>
+* V is the volume of the water norm in liters per day, M is your body weight, T is the time of active sports, or another type of activity commensurate in terms of loads (in the absence of these, you must set 0)</textarea
+        >
+        <form>
+          <label>
+            <input type="radio" name="gender" value="woman" checked /> For woman
+          </label>
+          <label>
+            <input type="radio" name="gender" value="man" /> For man
+          </label>
+          <div>
+            <label for="weight">Your weight in kilograms:</label>
+            <input type="number" id="weight" name="weight" value="0" />
+          </div>
+          <div>
+            <label for="activity-time"
+              >The time of active participation in sports or other activities
+              with a high physical load in hours:</label
+            >
+            <input
+              type="number"
+              id="activity-time"
+              name="activity-time"
+              value="0"
+            />
+          </div>
+          <div>
+            <label>The required amount of water in liters per day:</label>
+            <span>1.8 L</span>
+          </div>
+          <div>
+            <label for="water-intake"
+              >Write down how much water you will drink:</label
+            >
+            <input
+              type="number"
+              id="water-intake"
+              name="water-intake"
+              value="0"
+            />
+          </div>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html> -->
+</html>
