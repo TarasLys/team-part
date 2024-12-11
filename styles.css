@@ -46,7 +46,6 @@ body {
     align-items: center;
     position: relative;
     max-height: 90vh;
-    /* Ограничиваем максимальную высоту */
 }
 
 .modal-content {
@@ -54,9 +53,7 @@ body {
     padding: 20px;
     position: relative;
     overflow-y: auto;
-    /* Добавляем прокрутку по вертикали */
     max-height: 80vh;
-    /* Ограничиваем максимальную высоту контента */
 }
 
 .close-button {
