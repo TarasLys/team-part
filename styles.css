@@ -1,4 +1,4 @@
-/* CSS Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -179,10 +179,75 @@ button:hover {
     background-color: #0056b3;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
+    .modal {
+        width: 95%;
+        max-width: 100%;
+    }
+
     .modal-content {
-        width: 100%;
+        padding: 15px;
+    }
+
+    .formulas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .radio-label {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .label-input {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .modal {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .modal-content {
         padding: 20px;
+    }
+
+    .formulas {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .radio-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .radio-label {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .label-input {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        align-self: flex-end;
     }
 }
 
