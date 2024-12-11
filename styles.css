@@ -190,16 +190,16 @@ button:hover {
     .modal {
         width: 95%;
         max-width: 100%;
-        max-height: 90vh;
-        /* Ограничиваем максимальную высоту */
+        height: 100vh;
+        /* Устанавливаем высоту на 100% */
     }
 
     .modal-content {
         padding: 15px;
         overflow-y: auto;
         /* Добавляем прокрутку по вертикали */
-        max-height: 80vh;
-        /* Ограничиваем максимальную высоту контента */
+        height: 100%;
+        /* Устанавливаем высоту на 100% */
     }
 
     .formulas {
